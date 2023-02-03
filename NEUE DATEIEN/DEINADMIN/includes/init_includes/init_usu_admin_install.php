@@ -29,9 +29,9 @@ $usu_install_config = [
     'REMOVE_CHARS' => ['configuration_value' => 'punctuation', 'values' => ['punctuation', 'non-alphanumerical']],
     'FILTER_PCRE' => ['configuration_value' => ''],
     'FILTER_SHORT_WORDS' => ['configuration_value' => '0'],
-    'FILTER_PAGES' => ['configuration_value' => 'index, product_info, product_music_info, document_general_info, document_product_info, product_free_shipping_info, products_new, products_all, shopping_cart, featured_products, specials, contact_us, conditions, privacy, reviews, shippinginfo, faqs_all, site_map, gv_faq, discount_coupon, page, page_2, page_3, page_4'],
+    'FILTER_PAGES' => ['configuration_value' => 'index, product_info, product_music_info, document_general_info, document_product_info, product_free_shipping_info, products_new, products_all, shopping_cart, featured_products, specials, contact_us, conditions, privacy, reviews, shippinginfo, faqs_all, site_map, gv_faq, discount_coupon, page, page_2, page_3, page_4, ask_a_question, product_reviews_write'],
     'ENGINE' => ['configuration_value' => 'rewrite', 'values' => ['rewrite']],
-    'REDIRECT' => ['configuration_value' => 'false', 'values' => ['false', 'true']],
+    'REDIRECT' => ['configuration_value' => 'true', 'values' => ['false', 'true']],
 ];
 
 // -----
