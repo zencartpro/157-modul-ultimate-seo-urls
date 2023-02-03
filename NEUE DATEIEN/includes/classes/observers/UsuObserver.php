@@ -1,8 +1,8 @@
 <?php
 /**
- * Part of Ultimate URLs for Zen Cart.
+ * Part of Ultimate URLs for Zen Cart, v3.1.0+
  *
- * @copyright Copyright 2019-2021 Cindy Merkin (vinosdefrutastropicales.com)
+ * @copyright Copyright 2019-2023 Cindy Merkin (vinosdefrutastropicales.com)
  * @license http://www.gnu.org/licenses/gpl.txt GNU GPL V3.0
  */
 if (!defined('IS_ADMIN_FLAG') || IS_ADMIN_FLAG === true) {
@@ -11,10 +11,13 @@ if (!defined('IS_ADMIN_FLAG') || IS_ADMIN_FLAG === true) {
 
 class UsuObserver extends base 
 {
+    public
+        $enabled,
+        $usu;
     public function __construct() 
     {
         $this->enabled = (defined('USU_ENABLED') && USU_ENABLED == 'true');
-        if ($this->enabled) {
+        if ($this->enabled === true) {
             if (!class_exists('usu')) {
                 require DIR_WS_CLASSES . 'usu.php';
             }
@@ -22,13 +25,13 @@ class UsuObserver extends base
             
             $this->attach (
                 $this, 
-                array( 
+                [
                     /* From /includes/functions/html_output.php */
                    'NOTIFY_SEFU_INTERCEPT',
 
                     /* From /includes/init_includes/init_canonical.php */
                     'NOTIFY_INIT_CANONICAL_PARAM_WHITELIST',
-                )
+                ]
             );
         }
     }

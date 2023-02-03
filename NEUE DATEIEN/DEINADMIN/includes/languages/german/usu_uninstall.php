@@ -2,7 +2,7 @@
 /**
  * Part of Ultimate URLs for Zen Cart, v3.0.0+.
  *
- * @copyright Copyright 2019-2022 Cindy Merkin (vinosdefrutastropicales.com)
+ * @copyright Copyright 2019-2023 Cindy Merkin (vinosdefrutastropicales.com)
  * @license http://www.gnu.org/licenses/gpl.txt GNU GPL V3.0
  */
 define('HEADING_TITLE', 'Deinstallieren Sie <em>Ultimate SEO URLs</em>, Version ' . USU_VERSION);

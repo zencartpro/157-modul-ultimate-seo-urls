@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Ultimate SEO URLs 3.0.11 für Zen-Cart 1.5.7 deutsch</title>
+<title>Ultimate SEO URLs 3.1.0 für Zen-Cart 1.5.7 deutsch</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="content-language" content="de">
@@ -12,7 +12,7 @@
 <body>
 <div id="wrapper">
 <div id="header">
-<h1>Ultimate SEO URLs 3.0.11 für Zen-Cart 1.5.7 deutsch</h1>
+<h1>Ultimate SEO URLs 3.1.0 für Zen-Cart 1.5.7 deutsch</h1>
 </div>
 
 <div id="slidetabsmenu" style="display: none;">
@@ -38,7 +38,7 @@
 
   <p>Ultimate SEO URLs  schreibt die Seiten in Zen-Cart auf "schönere" URLs um. <br>
     <br>
-  Version 3.0.11 ist nur für Zen Cart 1.5.7 deutsch geeignet und behebt etliche Bugs aus älteren Ultimate SEO Versionen und bringt einige neue Features:<br>
+  Version 3.1.0 ist nur für Zen Cart 1.5.7 deutsch geeignet und behebt etliche Bugs aus älteren Ultimate SEO Versionen und bringt einige neue Features:<br>
   <br>
     Die Endung der Seiten kann  via Admin eingestellt werden (standardmäßig gar keine Endung). Möglich sind aber auch .html oder .htm.<br>
     Es kann eingestellt werden ob nur der Artikelname, Kategoriename oder auch zusätzlich der Name der jeweiligen Oberkategorien in den Link aufgenommen werden soll.<br>
@@ -50,18 +50,28 @@
   <br> 
     Kurze Worte können ausgefiltert werden
   <br>
-Alte mittlerweile umbenannte URLs können automatisch per 301 Redirect auf neue URLs umgeleitet werden  <br>
-Die umgeschriebenen URLs können gecached werden.  <br>
+Alte mittlerweile umbenannte URLs können automatisch per 301 Redirect auf neue URLs umgeleitet werden  <br> 
+NEU seit Version 3.1.0:<br>
+- Unterstützung für ask_a_question Seiten<br>
+- Unterstützung für product_reviews_write Seiten<br>
+- Datenbankcaching entfernt
+<br>
   </p>
 <h3>Copyright,  Lizenz</h3>
 <p>Copyright dieser deutschen Anpassung/Anleitung für Zen-Cart 1.5.7 deutsch<br>
-(c) 2017-2022 webchills (<a href="http://www.webchills.at" target="_blank">www.webchills.at</a>)</p>
+(c) 2017-2023 webchills (<a href="http://www.webchills.at" target="_blank">www.webchills.at</a>)</p>
 <p>deutsche Übersetzung/Anpassung des Moduls Ultimate SEO URLs von lat9<br>
   <a href="http://www.zen-cart.com/downloads.php?do=file&id=202" target="_blank">http://www.zen-cart.com/downloads.php?do=file&amp;id=132</a></p>
 <p>This contribution is subject to version 2.0 of the GPL license available through the world-wide-web at the following url:<br>
   <a href="http://www.zen-cart-pro.at/license/3_0.txt">http://www.zen-cart-pro.at/license/3_0.txt</a></p>
   <h3>Changelog</h3>
-   <p>3.0.11<br/>2022-03-10<br/>
+   <p>3.1.0<br/>
+     2023-02-03<br/>
+     Unterstützung für ask_a_question Seiten<br>
+Unterstützung für product_reviews_write Seiten<br>
+ Datenbankcaching entfernt <br>
+     <br>
+     3.0.11<br/>2022-03-10<br/>
  Bugfix: Admin Session ID wird aus genererierten Frontend Links ausgefiltert.<br/><br/>
  3.0.10<br/>
    2022-02-14<br/>
@@ -121,7 +131,7 @@ Die umgeschriebenen URLs können gecached werden.  <br>
 <div class="textcontent">
 <div class="regularlist">
 
-<h2>Installation</h2>
+<h2>Neuinstallation</h2>
 <h3>Voraussetzungen</h3>
   <p>    Dieses Modul ist<strong> nur für die deutsche Zen-Cart 1.5.7 Version geeignet</strong><br>
     <br>
@@ -156,11 +166,40 @@ RewriteBase /onlineshop/<br>
   <br>
   Die .htaccess ist kommentiert und enthält weitere Anpassungsmöglichkeiten, hier müssen Sie normalerweise nichts ändern oder entkommentieren. Tun Sie das nur, wenn Sie mit Rewrite Rules gut vertraut sind und wissen was Sie tun!</p>
 <p>3.<br>
-  In der Zen-Cart Administration sind nun unter Konfiguration &gt;Ultimate SEO URLs  die Einstellungsmöglichkeiten vorhanden. Stellen  Sie hier Ultimate SEO aktivieren auf true, um das Modul generell einzuschalten. Die weiteren Einstellungsmöglichkeiten sind jeweils dort erklärt.<br>
-  Wenn Sie grundlegende Einstellungen ändern (z.B. Dateiendung oder Kategorienamen ja oder nein, dann setzen Sie nach solchen Änderungen immer den SEO Cache zurück (letzte Option im Konfigurationsmenü).<br>
+  In der Zen-Cart Administration sind nun unter Konfiguration &gt;Ultimate SEO URLs  die Einstellungsmöglichkeiten vorhanden. Stellen  Sie hier Ultimate SEO aktivieren auf true, um das Modul generell einzuschalten. Die weiteren Einstellungsmöglichkeiten sind jeweils dort erklärt.
   <br>
-  <strong>FAQ</strong><br>
+</p>
+<h2>UPDATE VON VERSION 3.0.x</h2>
+ <p>
+  Wenn Sie bereits Version 3.0.x in Ihrem Zen Cart 1.5.7 deutsch Shop verwenden, aktualisiert sich das Modul automatisch, nachdem Sie die geänderten Moduldateien eingespielt haben.<br>
+  Folgende Dateien wurden in 3.1.0 gegenüber 3.0.x geändert:<br>
   <br>
+  .htaccess<br>
+  includes/auto_loaders/config.usu.php<br>
+  includes/extra_datafiles/usus.php<br>
+  includes/classes/observers/UsuObserver.php<br>
+  includes/classes/usu.php<br>
+  DEINADMIN/usu_uninstall.php<br>
+  DEINADMIN/includes/auto_loaders/config.usu.php<br>
+  DEINADMIN/includes/classes/observers/UsuAdminObserver.php<br>
+  DEINADMIN/includes/extra_datafiles/usu.php<br>
+  DEINADMIN/includes/functions/extra_functions/usu.php<br>
+  DEINADMIN/includes/init_includes/init_usu_admin.php<br>
+  DEINADMIN/includes/init_includes/init_usu_admin_config_changes.php<br>
+  DEINADMIN/includes/init_includes/init_usu_admin_install.php<br>
+  DEINADMIN/includes/init_includes/init_usu_admin_update.php<br>
+  DEINADMIN/includes/init_includes/init_usu_admin_update_from_ultimate_seo.php<br>
+  DEINADMIN/includes/languages/english/usu_configuration.php<br>
+  DEINADMIN/includes/languages/english/extra_definitions/usu.php<br>
+  DEINADMIN/includes/languages/german/usu_configuration.php<br>
+  DEINADMIN/includes/languages/german/extra_definitions/usu.php</p>
+<p>Achten Sie darauf, dass Sie Ihre .htaccess anpassen, sie enthält zwei neue Umschreibungen für die Unterstützung der ask_a_question und product_reviews_write pages!<br>
+  Die Vorlage dazu finden Sie im Ordner HTACCESS<br>
+  Um diese beiden Seitentypen umzuschreiben, erweitern Sie Ihre Definitionen unter Konfiguration &gt; Ultimate SEO URLS mit:<br>
+  ask_a_question,product_reviews_write  <br>
+</p>
+  <h2>FAQ</h2>
+  <p>
   1) Nach der Installation bekomme ich beim Aufruf meiner Produkte im Shop Fehler 404 Seite nicht gefunden?</p>
 .htaccess überprüfen<br>
 Was ist unter RewriteBase / eingetragen?<br>
