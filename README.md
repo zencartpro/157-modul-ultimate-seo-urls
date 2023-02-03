@@ -13,4 +13,3 @@ Ultimate SEO URLs schreibt die Seiten in Zen-Cart auf "schönere" URLs um.
 * Leerzeichen werden immer mit einem Bindestrich ersetzt 
 * Kurze Worte können ausgefiltert werden 
 * Alte mittlerweile umbenannte URLs können automatisch per 301 Redirect auf neue URLs umgeleitet werden 
-* Die umgeschriebenen URLs können gecached werden. 
