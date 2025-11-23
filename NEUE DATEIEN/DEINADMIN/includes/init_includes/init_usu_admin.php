@@ -1,10 +1,10 @@
 <?php
 /**
- * Part of Ultimate URLs, v3.1.0+, for Zen Cart.
+ * Part of Ultimate URLs, v3.1.2+, for Zen Cart.
  *
- * @copyright Copyright 2019-2024 Cindy Merkin (vinosdefrutastropicales.com)
+ * @copyright Copyright 2019-2025 Cindy Merkin (vinosdefrutastropicales.com)
  * @license http://www.gnu.org/licenses/gpl.txt GNU GPL V3.0
- * modified for Zen Cart German 2024-10-30 webchills
+ * modified for Zen Cart German 2025-11-23 webchills
  */
 if (!defined('IS_ADMIN_FLAG') || IS_ADMIN_FLAG !== true) {
     exit('Illegal Access');
@@ -15,8 +15,8 @@ if (!defined('IS_ADMIN_FLAG') || IS_ADMIN_FLAG !== true) {
 // last_modified date for the USU_VERSION configuration setting is updated to reflect
 // the current update-date.
 //
-define('USU_CURRENT_VERSION', '3.1.1');
-define('USU_CURRENT_UPDATE_DATE', '2024-10-26');
+define('USU_CURRENT_VERSION', '3.1.2');
+define('USU_CURRENT_UPDATE_DATE', '2025-11-23');
 
 // -----
 // Wait until an admin is logged in before seeing if any initialization steps need to be performed.
